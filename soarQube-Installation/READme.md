@@ -18,7 +18,7 @@
 #As a good security practice, SonarQuber Server is not advised to run sonar service as a root user, 
 # create a new user called sonar and grant sudo access to manage sonar services as follows
 
-sudo useradd sonar
+sudo adduser sonar
 # Grand sudo access to sonar user
 sudo echo "sonar ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/sonar
 # set hostname for the sonarqube server
@@ -38,8 +38,8 @@ sudo service sshd restart
 
 ``` sh
 cd /opt
-sudo yum -y install unzip wget git
-sudo yum install  java-11-openjdk-devel
+sudo apt -y install unzip wget git
+sudo apt install  java-11-openjdk-devel
 ```
 ### 4. Download and extract the SonarqQube Server software.
 ```sh
