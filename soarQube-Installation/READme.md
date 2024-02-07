@@ -39,7 +39,10 @@ sudo service sshd restart
 ``` sh
 cd /opt
 sudo apt -y install unzip wget git
-sudo apt install  java-11-openjdk-devel
+sudo add-apt-repository ppa:openjdk-r/ppa 
+sudo apt update 
+sudo apt install openjdk-11-jdk -y
+
 ```
 ### 4. Download and extract the SonarqQube Server software.
 ```sh
